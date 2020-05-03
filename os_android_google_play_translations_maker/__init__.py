@@ -1,0 +1,2 @@
+import os_android_google_play_translations_maker.TranslationsMaker
+import os_android_google_play_translations_maker.modules.props_bank
