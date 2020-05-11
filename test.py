@@ -1,7 +1,7 @@
 from os_android_google_play_translations_maker.TranslationsMaker import TranslationMaker
 
-tm = TranslationMaker(service_account_json_path="/path/to/your/project-firebase_service_account.json",
-                      project_id="my_project_id-7c220")
+tm = TranslationMaker(service_account_json_path="/Users/home/Programming/service_keys/remotes-firebase_service_account.json",
+                      project_id="remotes-7c523")
 
 
 # a callback to return a new string to translate, if one of the properties is too long
@@ -26,11 +26,11 @@ def on_translation_made_callback(translation_type, text_to_translate, translated
 
 
 # the call to make the json
-tm.translate_to_json(app_title_src="My App Name",
+tm.translate_to_json(app_title_src="whats is the type my fellow friend yes its mee ",
                      app_short_description_src="This is the short description",
                      app_full_description_src="This is the app full description",
-                     output_json_path='/Users/home/Desktop/stock_exchange/3.5/done/json.json',
+                     output_json_path='/Users/home/Desktop/stock_exchange/excels3.5/errored/json.json',
                      if_translation_too_long_callback=translation_too_long_callback,
                      on_translation_made_successfully_callback=on_translation_made_callback,
                      app_keywords="one two three four keywords",
-                     dest_languages_initials_list=['af', 'am', 'ar', 'hy-AM'])
+                     dest_languages_initials_list=['af', 'hy-AM'])

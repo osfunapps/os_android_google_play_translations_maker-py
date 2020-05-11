@@ -69,8 +69,7 @@ def append_lang_to_list(languages_translations_list, lang_dst, translated_title,
     languages_translations_list.append({props_bank.JSON_KEY_LANGUAGE: lang_dst,
                                         props_bank.JSON_KEY_TITLE: translated_title,
                                         props_bank.JSON_KEY_SHORT_DESCRIPTION: translated_short_description,
-                                        props_bank.JSON_KEY_FULL_DESCRIPTION: translated_full_description,
-                                        props_bank.JSON_KEY_UPDATED: False
+                                        props_bank.JSON_KEY_FULL_DESCRIPTION: translated_full_description
                                         })
 
 

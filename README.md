@@ -54,43 +54,47 @@ Install via pip:
     
 # output
 
-    [
-      {
-        "lang": "en-US",
-        "title": "My App Name no translate str",
-        "shortDescription": "This is the short description",
-        "fullDescription": "This is the app full description",
-        "updated": false
-      },
-      {
-        "lang": "af",
-        "title": "My programnaam no translate str",
-        "shortDescription": "Dit is die kort beskrywing",
-        "fullDescription": "Dit is die volledige beskrywing van die app\neen twee drie vier sleutelwoorde",
-        "updated": false
-      },
-      {
-        "lang": "am",
-        "title": "የእኔ መተግበሪያ ስም no translate str",
-        "shortDescription": "ይህ አጭር መግለጫው ነው",
-        "fullDescription": "ይህ የመተግበሪያው ሙሉ መግለጫ ነው\nአንድ ሁለት ሶስት አራት ቁልፍ ቃላት",
-        "updated": false
-      },
-      {
-        "lang": "ar",
-        "title": "اسم التطبيق الخاص بي no translate str",
-        "shortDescription": "هذا هو الوصف المختصر",
-        "fullDescription": "هذا هو الوصف الكامل للتطبيق\nواحدة أو ثلاث أو أربع كلمات رئيسية",
-        "updated": false
-      },
-      {
-        "lang": "hy-AM",
-        "title": "Իմ ծրագրի անունը no translate str",
-        "shortDescription": "Սա կարճ նկարագրությունն է",
-        "fullDescription": "Սա հավելվածի ամբողջական նկարագրությունն է\nմեկ երկու երեք չորս հիմնաբառ",
-        "updated": false
-      }
-    ]
+    {
+      "languages": [
+        {
+          "lang": "en-US",
+          "title": "My App Name no translate str",
+          "shortDescription": "This is the short description",
+          "fullDescription": "This is the app full description",
+          "updated": false
+        },
+        {
+          "lang": "af",
+          "title": "My programnaam no translate str",
+          "shortDescription": "Dit is die kort beskrywing",
+          "fullDescription": "Dit is die volledige beskrywing van die app\neen twee drie vier sleutelwoorde",
+          "updated": false
+        },
+        {
+          "lang": "am",
+          "title": "የእኔ መተግበሪያ ስም no translate str",
+          "shortDescription": "ይህ አጭር መግለጫው ነው",
+          "fullDescription": "ይህ የመተግበሪያው ሙሉ መግለጫ ነው\nአንድ ሁለት ሶስት አራት ቁልፍ ቃላት",
+          "updated": false
+        },
+        {
+          "lang": "ar",
+          "title": "اسم التطبيق الخاص بي no translate str",
+          "shortDescription": "هذا هو الوصف المختصر",
+          "fullDescription": "هذا هو الوصف الكامل للتطبيق\nواحدة أو ثلاث أو أربع كلمات رئيسية",
+          "updated": false
+        },
+        {
+          "lang": "hy-AM",
+          "title": "Իմ ծրագրի անունը no translate str",
+          "shortDescription": "Սա կարճ նկարագրությունն է",
+          "fullDescription": "Սա հավելվածի ամբողջական նկարագրությունն է\nմեկ երկու երեք չորս հիմնաբառ",
+          "updated": false
+        }
+      ],
+      
+      "updated": false
+    }
 ## Function Signature
     def translate_to_json(self,
                           app_title_src,

@@ -31,7 +31,7 @@ class TranslationMaker:
                           on_translation_made_successfully_callback=None,
                           app_keywords=None,
                           dest_languages_initials_list=GOOGLE_PLAY_LANGUAGES_INITIALS,
-                          language_initials_src='en-US',
+                          language_initials_src='en-US'
                           ):
         """Will translate a text to a given languages and save the results in a nice excel file.
 
@@ -91,5 +91,8 @@ class TranslationMaker:
 
         # save the output into a json file
         print("done. saving json...")
-        output_json = json.dumps(self.languages_translations_list, ensure_ascii=False)
+        output_dict = {"languages": self.languages_translations_list,
+                       "updated": False
+                       }
+        output_json = json.dumps(output_dict, ensure_ascii=False)
         fh.create_file(output_json_path, output_json)
